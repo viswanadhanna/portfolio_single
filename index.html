@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viswanadh Anna | AI Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fdd5b0a5d2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+<!-- Custom Cursor Elements -->
+<div class="cursor-dot"></div>
+<div class="custom-cursor"></div>
+
+<!-- Loading Animation -->
+<div class="loading-animation">
+    <div class="loader"></div>
+</div>
+
+<div id="header">
+    <div class="parallax-bg" id="parallax-bg"></div>
+    <div class="container">
+        <nav>
+            <h2 class="nav-logo">Viswanadh<span>.</span></h2>
+            <ul id="sidemenu">
+                <li><a href="#header" class="hover-target">Home</a></li>
+                <li><a href="#about" class="hover-target">About</a></li>
+                <li><a href="#projects" class="hover-target">Projects</a></li>
+                <li><a href="#interests" class="hover-target">Interests</a></li>
+                <li><a href="#contact" class="hover-target">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p class="glitch-text" data-text="AI/ML Engineer & Full-Stack Developer">AI/ML Engineer & Full-Stack Developer</p>
+            <h1>Hi, I'm <span class="typewriter">Viswanadh Anna</span><br>From Amrita University</h1>
+            <div class="social-icons header-social">
+                <a href="#" class="hover-target"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="hover-target"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="hover-target"><i class="fa-brands fa-kaggle"></i></a>
+            </div>
+            <a href="#about" class="scroll-down hover-target">
+                <span>Scroll Down</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- About Section -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1" data-aos="fade-right" data-aos-duration="1000">
+                <img src="images/user.jpg" alt="Viswanadh's Photo" class="tilt-effect">
+            </div>
+            <div class="about-col-2" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+                <h1 class="sub-title">About Me</h1>
+                <p>AI enthusiast with strong foundations in machine learning, cloud computing, and full-stack development. Passionate about creating real-world impact through innovative technology solutions. I thrive in environments where I can combine creative problem-solving with cutting-edge technical skills.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link hover-target" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links hover-target" onclick="opentab('education')">Education</p>
+                    <p class="tab-links hover-target" onclick="opentab('certifications')">Certifications</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>Python, JavaScript, C, MATLAB, Java</li>
+                        <li><span>AI/ML Frameworks</span><br>TensorFlow, Keras, Scikit-learn, OpenCV, PyTorch</li>
+                        <li><span>Web & Cloud</span><br>React.js, Node.js, MongoDB, AWS, Google Cloud</li>
+                        <li><span>Other Technologies</span><br>Docker, Git, RESTful APIs, GraphQL</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Amrita Vishwa Vidyapeetham</span><br>B.Tech in Artificial Intelligence<br>2022-2026</li>
+                        <li><span>Narayana Junior College</span><br>Higher Secondary<br>95.7%</li>
+                        <li><span>Research</span><br>Currently working on deep learning applications in biomedical signal processing</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="certifications">
+                    <ul>
+                        <li><span>AI Foundation</span><br>Infosys Springboard</li>
+                        <li><span>Intro to AI</span><br>IBM SkillsBuild</li>
+                        <li><span>Machine Learning</span><br>Stanford University (Coursera)</li>
+                        <li><span>Advanced Web Development</span><br>freeCodeCamp</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Projects Section -->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title" data-aos="fade-up">My Projects</h1>
+        <div class="projects-list">
+            <div data-aos="fade-up" data-aos-delay="150" class="project-card hover-target">
+                <i class="fa-solid fa-heart-pulse"></i>
+                <h2>Cardiovascular Disease Detection</h2>
+                <p>Implemented CNN+LSTM model for heart sound analysis with 92% accuracy. Used wavelet transforms for feature extraction and achieved state-of-the-art results on benchmark datasets.</p>
+                <div class="project-tags">
+                    <span>Deep Learning</span>
+                    <span>Healthcare</span>
+                    <span>Signal Processing</span>
+                </div>
+                <a href="#" class="hover-target">View Project</a>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="300" class="project-card hover-target">
+                <i class="fa-solid fa-microphone-lines"></i>
+                <h2>Multi-Speaker Speech Separation</h2>
+                <p>Hybrid DL model using SuperFormer for audio source separation. Developed a novel attention mechanism that outperforms existing approaches by 15% on the LibriMix dataset.</p>
+                <div class="project-tags">
+                    <span>Audio AI</span>
+                    <span>PyTorch</span>
+                    <span>Transformers</span>
+                </div>
+                <a href="#" class="hover-target">View Project</a>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="450" class="project-card hover-target">
+                <i class="fa-solid fa-house"></i>
+                <h2>RealEstate-360</h2>
+                <p>Cloud-based property platform with AWS and ML price prediction. Built with React.js, Node.js, and MongoDB Atlas, featuring real-time market analysis and virtual tours.</p>
+                <div class="project-tags">
+                    <span>Full Stack</span>
+                    <span>Machine Learning</span>
+                    <span>AWS</span>
+                </div>
+                <a href="#" class="hover-target">View Project</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Interests Section -->
+<div id="interests">
+    <div class="container">
+        <h1 class="sub-title" data-aos="fade-up">My Interests</h1>
+        <div class="interests-list">
+            <div class="interest tilt-effect" data-aos="zoom-in" data-aos-delay="150">
+                <img src="images/ai.jpg" alt="AI">
+                <div class="layer">
+                    <h3>Artificial Intelligence</h3>
+                    <p>Developing AI solutions for healthcare and speech processing, with a focus on making technology more accessible and impactful.</p>
+                    <a href="#" class="hover-target"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="interest tilt-effect" data-aos="zoom-in" data-aos-delay="300">
+                <img src="images/cloud.jpg" alt="Cloud Computing">
+                <div class="layer">
+                    <h3>Cloud Computing</h3>
+                    <p>Building scalable applications with AWS, Google Cloud, and exploring serverless architectures for maximum efficiency.</p>
+                    <a href="#" class="hover-target"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="interest tilt-effect" data-aos="zoom-in" data-aos-delay="450">
+                <img src="images/web.jpg" alt="Web Development">
+                <div class="layer">
+                    <h3>Full-Stack Development</h3>
+                    <p>Creating complete web solutions with React and Node.js, focusing on responsive designs and seamless user experiences.</p>
+                    <a href="#" class="hover-target"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Skills Section with Progress Bars -->
+<div id="skills-visual">
+    <div class="container">
+        <h1 class="sub-title" data-aos="fade-up">Technical Proficiency</h1>
+        <div class="skills-container" data-aos="fade-up" data-aos-delay="300">
+            <div class="skill-box">
+                <span class="skill-title">Machine Learning</span>
+                <div class="skill-bar">
+                    <span class="skill-per" style="width: 90%">
+                        <span class="tooltip">90%</span>
+                    </span>
+                </div>
+            </div>
+            
+            <div class="skill-box">
+                <span class="skill-title">Deep Learning</span>
+                <div class="skill-bar">
+                    <span class="skill-per" style="width: 85%">
+                        <span class="tooltip">85%</span>
+                    </span>
+                </div>
+            </div>
+            
+            <div class="skill-box">
+                <span class="skill-title">Frontend Development</span>
+                <div class="skill-bar">
+                    <span class="skill-per" style="width: 80%">
+                        <span class="tooltip">80%</span>
+                    </span>
+                </div>
+            </div>
+            
+            <div class="skill-box">
+                <span class="skill-title">Backend Development</span>
+                <div class="skill-bar">
+                    <span class="skill-per" style="width: 75%">
+                        <span class="tooltip">75%</span>
+                    </span>
+                </div>
+            </div>
+            
+            <div class="skill-box">
+                <span class="skill-title">Cloud Services</span>
+                <div class="skill-bar">
+                    <span class="skill-per" style="width: 70%">
+                        <span class="tooltip">70%</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Section -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left" data-aos="fade-right" data-aos-duration="1000">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>viswaanna@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+91 7989502139</p>
+                <div class="social-icons">
+                    <a href="#" class="hover-target"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" class="hover-target"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="hover-target"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="#" class="hover-target"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <a href="resume.pdf" download class="btn btn2 hover-target">Download Resume</a>
+            </div>
+            <div class="contact-right" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+                <form action="https://formspree.io/f/mnndzqwq" method="POST" id="contact-form">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2 hover-target">Submit</button>
+                </form>
+                <span id="form-response"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <p>&copy; 2023 Viswanadh Anna. All rights reserved.</p>
+            <div class="footer-nav">
+                <a href="#header" class="hover-target">Home</a>
+                <a href="#about" class="hover-target">About</a>
+                <a href="#projects" class="hover-target">Projects</a>
+                <a href="#contact" class="hover-target">Contact</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+<script>
+    // Initialize loading animation
+    window.addEventListener('load', function() {
+        setTimeout(function() {
+            document.querySelector('.loading-animation').classList.add('fade-out');
+        }, 1500);
+    });
+
+    // Initialize AOS animation library
+    AOS.init({
+        once: true,
+        offset: 100,
+        duration: 800,
+        easing: 'ease-in-out'
+    });
+    
+    // Custom cursor implementation
+    const cursor = document.querySelector('.custom-cursor');
+    const cursorDot = document.querySelector('.cursor-dot');
+    
+    document.addEventListener('mousemove', (e) => {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+        cursorDot.style.left = e.clientX + 'px';
+        cursorDot.style.top = e.clientY + 'px';
+    });
+    
+    // Hover effect for links and buttons
+    const hoverTargets = document.querySelectorAll('.hover-target');
+    
+    hoverTargets.forEach(target => {
+        target.addEventListener('mouseenter', () => {
+            cursor.style.width = '50px';
+            cursor.style.height = '50px';
+            cursor.style.background = 'rgba(0, 162, 255, 0.2)';
+        });
+        
+        target.addEventListener('mouseleave', () => {
+            cursor.style.width = '20px';
+            cursor.style.height = '20px';
+            cursor.style.background = 'rgba(0, 162, 255, 0.3)';
+        });
+    });
+    
+    // Initialize Vanilla Tilt for 3D hover effects
+    VanillaTilt.init(document.querySelectorAll(".tilt-effect"), {
+        max: 15,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.3,
+    });
+
+    // Tab switching
+    function opentab(tabname) {
+        const tablinks = document.getElementsByClassName("tab-links");
+        const tabcontents = document.getElementsByClassName("tab-contents");
+        
+        for (let tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (let tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+        
+        // Reset animation for tab contents
+        const activeTabItems = document.querySelectorAll("#" + tabname + " li");
+        activeTabItems.forEach((item, index) => {
+            item.style.animationDelay = (index * 0.1) + "s";
+        });
+    }
+
+    // Mobile menu
+    const sidemenu = document.getElementById("sidemenu");
+    function openmenu() { sidemenu.style.right = "0"; }
+    function closemenu() { sidemenu.style.right = "-200px"; }
+
+    // Enhanced parallax effect
+    document.addEventListener('mousemove', (e) => {
+        const parallaxBg = document.getElementById('parallax-bg');
+        if (!parallaxBg) return;
+        
+        const x = (window.innerWidth - e.pageX * 2) / 100;
+        const y = (window.innerHeight - e.pageY * 2) / 100;
+        
+        parallaxBg.style.transform = `translate(${x}px, ${y}px)`;
+    });
+
+    // Typewriter effect for name
+    const typewriter = document.querySelector('.typewriter');
+    const text = typewriter.textContent;
+    typewriter.textContent = '';
+    
+    let i = 0;
+    const typeInterval = setInterval(() => {
+        if (i < text.length) {
+            typewriter.textContent += text.charAt(i);
+            i++;
+        } else {
+            clearInterval(typeInterval);
+        }
+    }, 100);
+
+    // Form submission
+    document.getElementById('contact-form').addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const responseElement = document.getElementById('form-response');
+        const formData = new FormData(this);
+        const submitBtn = this.querySelector('button[type="submit"]');
+        
+        try {
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = 'Sending...';
+            
+            const response = await fetch(this.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+            
+            if (response.ok) {
+                responseElement.textContent = "Message sent successfully! 🎉";
+                responseElement.style.color = "#4CAF50";
+                this.reset();
+            } else {
+                throw new Error('Form submission failed');
+            }
+        } catch (error) {
+            responseElement.textContent = "Error sending message. Please try again.";
+            responseElement.style.color = "#ff004f";
+        } finally {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = 'Submit';
+            
+            setTimeout(() => {
+                responseElement.textContent = "";
+            }, 5000);
+        }
+    });
+
+    // Progress bar animation
+    function animateSkillBars() {
+        const skillPers = document.querySelectorAll('.skill-per');
+        
+        skillPers.forEach(skillPer => {
+            const width = skillPer.getAttribute('style').match(/width:\s*(\d+)%/)[1];
+            
+            skillPer.style.width = '0';
+            
+            setTimeout(() => {
+                skillPer.style.transition = 'width 1.5s ease-in-out';
+                skillPer.style.width = width + '%';
+            }, 500);
+        });
+    }
+
+    // Run animation when skills section is in view
+    const skillsSection = document.getElementById('skills-visual');
+    const skillsSectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateSkillBars();
+                skillsSectionObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.3 });
+
+    if (skillsSection) {
+        skillsSectionObserver.observe(skillsSection);
+    }
+
+    // Hide cursor on mobile devices
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        document.querySelector('.custom-cursor').style.display = 'none';
+        document.querySelector('.cursor-dot').style.display = 'none';
+        document.body.style.cursor = 'auto';
+    }
+
+    // Scroll to highlight active section in nav
+    const sections = document.querySelectorAll('div[id]');
+    window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (scrollY >= (sectionTop - sectionHeight / 3)) {
+                current = section.getAttribute('id');
+            }
+        });
+        
+        const navLinks = document.querySelectorAll('nav ul li a');
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').substring(1) === current) {
+                link.classList.add('active');
+            }
+        });
+    });
+</script>
+</body>
+</html>
